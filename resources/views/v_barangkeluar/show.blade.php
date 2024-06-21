@@ -18,7 +18,7 @@
                             </tr>
                             <tr>
                                 <td>ID Barang - Merk Barang</td>
-                                <td>{{ $rsetBarangKeluar->barang_id }} - {{ $rsetBarangKeluar->barang->merk }}</td>
+                                <td>{{ $rsetBarangKeluar->barang_id }} - {{ $rsetBarangKeluar->barang->merk }} {{ $rsetBarangKeluar->barang->seri }}</td>
                             </tr>
                         </table>
                     </div>

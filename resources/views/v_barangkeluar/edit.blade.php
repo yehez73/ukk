@@ -44,7 +44,7 @@
                                 <select class="form-control @error('barang_id') is-invalid @enderror" name="barang_id">
                                     @foreach($barangID as $barangIdrow)
                                         <option value="{{ $barangIdrow->id }}" {{ old('barang_id') == $barangIdrow->id ? 'selected' : '' }}>
-                                            Merk barang: {{ $barangIdrow->merk }} -- Stok sekarang: {{ $barangIdrow->stok }}
+                                            {{ $barangIdrow->merk }} {{ $barangIdrow->seri }} || Stok: {{ $barangIdrow->stok }}
                                         </option>
                                     @endforeach
                                 </select>

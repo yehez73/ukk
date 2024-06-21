@@ -38,7 +38,7 @@
                                 <label class="font-weight-bold">Barang</label>
                                 <select class="form-control" name="barang_id" id="">
                                     @foreach($barangId as $barangIdrow)
-                                        <option value="{{$barangIdrow->id}}">{{$barangIdrow->merk}} - {{$barangIdrow->seri}} || Stok sekarang: {{$barangIdrow->stok}}</option>
+                                        <option value="{{$barangIdrow->id}}">{{$barangIdrow->merk}} {{$barangIdrow->seri}} || Stok sekarang: {{$barangIdrow->stok}}</option>
                                     @endforeach
                                 </select>
                             
